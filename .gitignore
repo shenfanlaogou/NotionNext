@@ -1,64 +1,87 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+```
+# Build artifacts
+dist/
+build/
+*.js.map
+*.min.js
+*.min.css
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependencies
+node_modules/
 
-# testing
-/coverage
-/test-results
-
-# next.js
-/.next/
-/out/
-
-# vitepress (docs site)
-.vitepress/cache
-.vitepress/dist
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env.local
-.env.docs.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Environment
 .env
+.env.local
+.env.*
 
-# vercel
-.vercel
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# dev
-/data.json
-/pnpm-lock.yaml
-.idea
-.vscode
+# Logs
+*.log
 
+# Temp files
+*.tmp
+*.temp
 
-# sitemap
-/public/robots.txt
-/public/sitemap.xml
-/public/rss/*
-/sitemap.xml
+# OS
+.DS_Store
+Thumbs.db
 
-# yarn
-package-lock.json
-# yarn.lock
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-.notion-api-lock
-.tmp/
-.perf/
-tsconfig.tsbuildinfo
-webpack-internal:/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+build/
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+
+# Go
+*.exe
+*.test
+*.prof
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+
+# Rust
+target/
+Cargo.lock
+
+# Julia
+.julia/
+julia-*/
+
+# Zig
+zig*/
+```
