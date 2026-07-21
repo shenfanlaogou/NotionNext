@@ -1,64 +1,43 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-/test-results
-
-# next.js
-/.next/
-/out/
-
-# vitepress (docs site)
-.vitepress/cache
-.vitepress/dist
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env.local
-.env.docs.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Environment
+.venv/
+venv/
 .env
+.env.local
+*.env.*
 
-# vercel
-.vercel
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
 
-# dev
-/data.json
-/pnpm-lock.yaml
-.idea
-.vscode
+# Editors
+.vscode/
+.idea/
 
+# Build artifacts
+dist/
+build/
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
 
-# sitemap
-/public/robots.txt
-/public/sitemap.xml
-/public/rss/*
-/sitemap.xml
+# Coverage
+.coverage
+coverage/
+htmlcov/
 
-# yarn
-package-lock.json
-# yarn.lock
-
-.notion-api-lock
-.tmp/
-.perf/
-tsconfig.tsbuildinfo
-webpack-internal:/
+# Testing
+.pytest_cache/
+.mypy_cache/
+```
