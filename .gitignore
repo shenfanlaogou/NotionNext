@@ -1,43 +1,87 @@
-```gitignore
+```
+# Build artifacts
+dist/
+build/
+*.js.map
+*.min.js
+*.min.css
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
 
-# Environment
-.venv/
-venv/
-.env
-.env.local
-*.env.*
-
-# Logs and temporary files
-*.log
-*.tmp
-*.swp
-
-# Editors
-.vscode/
-.idea/
-
-# Build artifacts
-dist/
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
 build/
+
+# C/C++
 *.o
 *.obj
+*.exe
+*.dll
 *.so
 *.a
-*.dll
+
+# Go
 *.exe
-*.out
+*.test
+*.prof
 
-# Coverage
-.coverage
-coverage/
-htmlcov/
+# Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
 
-# Testing
-.pytest_cache/
-.mypy_cache/
+# Rust
+target/
+Cargo.lock
+
+# Julia
+.julia/
+julia-*/
+
+# Zig
+zig*/
 ```
